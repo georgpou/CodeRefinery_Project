@@ -1,14 +1,15 @@
-# Simple Python Greeting Script
+#!/usr/bin/env python3
+"""
+A simple Python script for demonstration.
+"""
 
-A minimal Python project for demonstration purposes.
+def greet(name: str) -> str:
+    # Return a personalized greeting string using an f-string
+    return f"Hello, {name}! Welcome to my GitHub project."
 
-## Features
-- Asks for your name
-- Prints a personalized greeting
-
-## Usage
-Clone this repo and run the script:
-
-```bash
-
-python3 greet.py
+if __name__ == "__main__":
+    # Prompt the user for their name
+    user = input("Enter your name: ")
+    
+    # Print the greeting returned by greet()
+    print(greet(user))
